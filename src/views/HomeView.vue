@@ -1,11 +1,11 @@
 <template>
   <div class="text-3xl align-center text-center flex items-center justify-center h-screen">
-    <TwoInOne />
+    <Hero />
   </div>
 </template>
 
 <script setup>
-import TwoInOne from "../components/TwoInOne.vue";
+import Hero from "../components/Hero.vue";
 </script>
 
 <style scoped></style>
