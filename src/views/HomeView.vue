@@ -1,5 +1,5 @@
 <template>
-  <div class="text-3xl align-center text-center flex items-center justify-center h-screen">
+  <div class="text-3xl align-center h-screen">
     <Hero />
   </div>
 </template>

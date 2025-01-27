@@ -1,25 +1,29 @@
-<template>
-<section class="relative w-full h-[50%]">
-    <!-- Imagen de fondo -->
-    <div class="absolute inset-0 top-0">
-        <img
-            src="../assets/banner_home.jpg"
-            alt="Imagen de fondo"
-            class="w-full h-full object-cover"
-        />
-    </div>
 
-    <!-- Texto sobre la imagen -->
-    <div
-      class="absolute inset-0 flex items-center justify-center "
-    >
-      <h1 class="text-white text-3xl md:text-5xl font-bold">
-        SCCAD Topografía
-      </h1>
-    </div>
+<template>
+  <section class="relative w-full h-[50vh] md:h-[40vh] lg:h-[50vh]">
+    <v-carousel hide-delimiters cycle show-arrows="hover">
+      <v-carousel-item
+        :src="banner1"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        :src="banner2"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        :src="banner3"
+        cover
+      ></v-carousel-item>
+    </v-carousel>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import banner1 from '@/assets/carousel_homeview/banner_home.jpg'
+import banner2 from '@/assets/carousel_homeview/banner2_home.jpg'
+import banner3 from '@/assets/carousel_homeview/banner3_home.jpg'
+</script>
 
-<style lang="scss" scoped></style>
+<style  scoped></style>
